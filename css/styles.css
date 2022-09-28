@@ -61,7 +61,6 @@ body {
 
 .list {
     list-style: none;
-    
 }
 
 /* 1. header */
@@ -70,8 +69,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--primery-border-color);
-
 }
 
 .header-pagination .header-pagination-item.current,
@@ -90,6 +87,13 @@ body {
 .header-nav {
     display: flex;
     align-items:center;
+}
+
+.header-border {
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    border-bottom: 1px solid var(--primery-border-color);
 }
 
 /* 1.1. header-nav */
@@ -128,8 +132,7 @@ body {
     display: flex;
     width: 281px;
     justify-content: space-between;
-    margin-top: 32px;
-    margin-bottom: 32px;
+
     margin-left: 93px;
     padding: 0px;
 }
@@ -182,15 +185,16 @@ body {
 /* 2.1. section-hero */
 
 .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
     text-align: center;
     background-color: var(--hero-footer-background-color);
 }
 
+
+
 .hero-title {
-    padding-top: 200px;
     margin-top: 0px;
-    margin-bottom: 30px;
-    
 
     color: var(--primary-white-color);
     
@@ -208,7 +212,7 @@ body {
     padding-right: 32px;
     padding-top: 10px;
     padding-bottom: 10px;
-    margin-bottom: 200px;
+    margin-top: 30px;
 
     
 
@@ -230,6 +234,11 @@ body {
     display: none;
 }
 
+.section.content {
+    padding-top: 94px;
+    padding-bottom: 47px;
+}
+
 .section-subtitle {
     margin-top: 0px;
     margin-bottom: 10px;
@@ -243,7 +252,9 @@ body {
     text-transform: uppercase;
 }
 
-.content {
+
+
+.container.content .content {
     display: flex;
     justify-content: space-between;
     margin: 0px;
@@ -261,15 +272,14 @@ body {
     margin: 0px;
 }
 
-.list.content {
-    margin-top: 94px;
-}
+
 
 
 /* 2.3. section-Чим ми займаємося */
 
-.container.work {
-    margin-top: 94px;
+.section.work {
+    padding-top: 47px;
+    padding-bottom: 94px;
 }
 
 .section-title {
@@ -298,10 +308,13 @@ body {
 /* 2.3. section-Наша команда */
 
 .section.team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+
     background-color: var(--minor-white-color);
-    margin-top: 94px;
-    
 }
+
+
 
 .section-subject {
     color: var(--title-text-color);
@@ -323,21 +336,9 @@ body {
     padding-left: 0px;
     margin-top: 50px;
     margin-bottom: 0px;
-    padding-bottom: 94px;
-
-}
-.container.team .section-subject {
-    margin-top: 30px;
-    margin-bottom: 10px;
-    text-align: center;
 }
 
-.container.team p {
-    margin-top: 0px;
-    margin-bottom: 30px;
-    text-align: center;
-    
-}
+
 
 .team-portfolio {
     background-color: var(--primary-white-color);
@@ -345,19 +346,27 @@ body {
     border-radius: 0px 0px 4px 4px;
 }
 
-.container.team .section-title {
-    padding-top: 94px;
-    margin-top: 0px;
+.team-portfolio-info {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
 }
+
 
 
 
 /* 3. footer */
 
 .footer {
-    background-color: var(--hero-footer-background-color);
+    padding-top: 60px;
+    padding-bottom: 60px;
 
+    background-color: var(--hero-footer-background-color);
 }
+
+
+
+
 
 .footer-logo-accent {
     color: var(--primary-white-color);
@@ -385,10 +394,7 @@ body {
     font-style: normal;
 }
 
-.footer .container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
+
 
 
 .footer .container .address .list {
@@ -410,7 +416,7 @@ body {
 
 /* 4. main-portfolio */
 
-.container.main {
+.section-main {
     padding-top: 94px;
     padding-bottom: 94px;
 
@@ -485,7 +491,7 @@ body {
 .list.portfolio {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 34px;
+    margin-top: 50px;
     
 }
 
